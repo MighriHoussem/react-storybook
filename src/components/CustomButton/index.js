@@ -1,4 +1,4 @@
-
+import "./style.css";
 
 const Button = (props) => {
 
@@ -6,7 +6,9 @@ const Button = (props) => {
 
 
     return (
-        <button className={`btn btn-${variant}`} onClick={handleClick} {...rest}>
+        <button
+            className={`button ${variant}`}
+            onClick={handleClick} {...rest}>
             {label}
         </button>
     )

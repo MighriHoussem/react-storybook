@@ -1,0 +1,15 @@
+.input {
+    border-radius: 8px;
+}
+
+.small {
+    width: 40%;
+}
+
+.midium {
+    width: 60%;
+}
+
+.large {
+    width: 100%;
+}
