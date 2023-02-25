@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wrapperDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: flex-start !important;
+}
+
+.divInput {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.divButton {
+  grid-column: 2 / 2;
+  grid-row: 1;
+}

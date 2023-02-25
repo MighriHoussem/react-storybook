@@ -2,7 +2,7 @@ import "./style.css";
 
 const Input = (props) => {
 
-    const { id, size, placeholder } = props;
+    const { id, size, placeholder, handleChange } = props;
 
 
     return (
@@ -11,6 +11,7 @@ const Input = (props) => {
             className={`input ${size}`}
             placeholder={placeholder}
             id={id}
+            onChange={handleChange}
         />
     )
 }

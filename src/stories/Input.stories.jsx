@@ -14,6 +14,34 @@ export default {
     }
 };
 
+export const DefaultInput = {
+    component: Input,
+    title: "Default Input",
+    argTypes: {
+        size: {
+            options: ['small', 'midium', 'large'],
+            control: {
+                type: 'select'
+            }
+        },
+        placeholder: {
+            options: [],
+            control: {
+                type: 'text'
+            },
+        },
+        id: {
+            options: [],
+            control: {
+                type: 'text'
+            }
+        },
+        handleChange: {
+            action: 'clicked',
+        }
+    }
+};
+
 export const SmallInput = (props) => <Input
     id={"smallInput"}
     size={"small"}
